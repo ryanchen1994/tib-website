@@ -35,7 +35,8 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  // 使用 Vite 注入的 BASE_URL 作為 history 的 base，這樣在 GitHub Pages 的 repository page 下路由才會正確
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
   scrollBehavior() {
     return { top: 0 }

@@ -45,10 +45,14 @@
 import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
 
+
 const isMobileMenuOpen = ref(false)
 
+// 使用 Vite 的 BASE_URL 作為首頁連結，避免在 GitHub Pages 的 repository page 下導回 domain root
+const BASE = import.meta.env.BASE_URL || '/'
+
 const navLinks = [
-  { name: '首頁', path: '/' },
+  { name: '首頁', path: BASE },
   { name: '關於我們', path: '/about' },
   { name: '產品說明', path: '/products' },
   { name: '操作案例', path: '/cases' },

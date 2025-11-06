@@ -17,7 +17,7 @@
         <div>
           <h4 class="text-lg font-semibold text-white mb-4">網站地圖</h4>
           <ul class="space-y-2">
-            <li><RouterLink to="/" class="text-sm hover:text-white transition">首頁</RouterLink></li>
+            <li><RouterLink :to="BASE" class="text-sm hover:text-white transition">首頁</RouterLink></li>
             <li><RouterLink to="/about" class="text-sm hover:text-white transition">關於我們</RouterLink></li>
             <li><RouterLink to="/products" class="text-sm hover:text-white transition">產品說明</RouterLink></li>
             <li><RouterLink to="/cases" class="text-sm hover:text-white transition">操作案例</RouterLink></li>
@@ -45,4 +45,7 @@
 
 <script setup>
 import { RouterLink } from 'vue-router'
+
+// 同 Navbar 使用 BASE 以符合 GH Pages 的 repository base
+const BASE = import.meta.env.BASE_URL || '/'
 </script>
