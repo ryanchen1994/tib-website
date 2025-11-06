@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageBanner title="操作案例" subtitle="我們的技術已在各大醫療院所導入" />
+    <PageBanner title="施作案例" subtitle="我們的技術已在各大醫療院所導入" />
 
     <section class="py-16 md:py-24 bg-gray-50">
       <div class="container mx-auto px-6">

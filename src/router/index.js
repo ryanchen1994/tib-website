@@ -35,9 +35,10 @@ const routes = [
 ]
 
 const router = createRouter({
-  // 使用 hash 模式（/#/）來避免 GitHub Pages 上的伺服器 fallback 問題
-  // 最終 URL 會是 /tib-website/#/about 之類，這在 GH Pages 上不需額外伺服器設定
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  // 使用 hash 模式（/#/）來避免 GitHub Pages 上的 404 問題
+  // Hash 模式不需要伺服器配置，所有路由都會透過 # 來處理
+  // URL 範例：https://username.github.io/repo/#/about
+  history: createWebHashHistory(),
   routes,
   scrollBehavior() {
     return { top: 0 }

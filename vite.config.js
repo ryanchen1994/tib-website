@@ -5,7 +5,7 @@ import { fileURLToPath, URL } from 'node:url'
 // https://vitejs.dev/config/
 export default defineConfig({
   // 【新增這行】
-  //base: "/tib-website/",
+  base: "/tib-website/",
 
   plugins: [vue()],
   resolve: {

@@ -51,19 +51,17 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
-// 輪播內容 (從你的截圖來的)
+// 輪播內容
 const slides = ref([
   {
     title: '智能調劑台',
-    subtitle: '本系統為世界首創，遵循多國專利技術，以藥品圖形辨識智能管理導引系統，減輕工作負擔。',
-    // 【TODO】請替換成你的圖片
-    image: 'https://placehold.co/1920x800/334155/FFFFFF?text=Slide+1+(智能調劑台)'
+    subtitle: '本系統為世界首創，通過多國專利肯定，以藥品調劑台搭載智慧導引系統，點亮相對應藥品指示燈，減輕工作負荷，大幅提升調劑準確率。',
+    image: 'https://img.technews.tw/wp-content/uploads/2017/04/17143138/close-up-1853400_640.jpg'
   },
   {
     title: 'ADC',
-    subtitle: '佈局醫院－電子藥櫃與動畫數量顯示',
-    // 【TODO】請替換成你的圖片
-    image: 'https://placehold.co/1920x800/475569/FFFFFF?text=Slide+2+(ADC)'
+    subtitle: '市售唯一電子面板均顯示數量。佈局醫院－電子藥櫃與動畫數量顯示，抽屜面板均具有電子標籤及數量提示，提供即時庫存管理與用藥追蹤。',
+    image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1920&h=800&fit=crop'
   }
 ])
 </script>

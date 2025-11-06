@@ -17,10 +17,10 @@
             >
               <img :src="product.imageUrl" :alt="product.name" class="w-full h-64 object-cover">
               
-              <div classs="p-8">
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">{{ product.name }}</h3>
+              <div class="p-8">
+                <h3 class="text-2xl font-extrabold text-gray-900 mb-2">{{ product.name }}</h3>
                 <p class="text-gray-600 mb-4">{{ product.tagline }}</p>
-                <span class="text-blue-600 font-semibold hover:text-blue-700">
+                <span class="text-brand-600 font-semibold hover:text-brand-700">
                   查看詳細資訊 &raquo;
                 </span>
               </div>

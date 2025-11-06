@@ -7,16 +7,14 @@ export const products = [
     name: '智能調劑台',
     tagline: '世界首創，遵循多國專利技術',
     description: '本系統為世界首創，遵循多國專利技術，以藥品圖形辨識智能管理導引系統，減輕工作負擔。獨創智能導引系統，解決傳統人工擺藥疏失問題。',
-    // 【TODO】替換成你的圖片
-    imageUrl: 'https://placehold.co/1200x800/3B82F6/FFFFFF?text=智能調劑台'
+    imageUrl: 'https://www.hst.org.tw/uploads/member/148/solution/images/5dfd0301bfaab.jpeg'
   },
   {
     id: 'adc',
     name: 'ADC (自動調配藥櫃)',
     tagline: '佈局醫院，電子藥櫃與動畫數量顯示',
     description: '佈局醫院－電子藥櫃與動畫數量顯示。ADC 系統能有效管理高風險藥品，確保取藥的準確性與安全性，並自動記錄所有操作，便於追蹤管理。',
-    // 【TODO】替換成你的圖片
-    imageUrl: 'https://placehold.co/1200x800/10B981/FFFFFF?text=ADC'
+    imageUrl: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1200&h=800&fit=crop'
   },
   // 【TODO】未來有新產品，就加在這裡
   // {
