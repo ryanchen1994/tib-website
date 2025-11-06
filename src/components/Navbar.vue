@@ -1,39 +1,39 @@
 <template>
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="bg-gray-100 text-gray-600 text-xs hidden md:block">
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-gray-100">
+    <div class="bg-brand-600/90 text-white text-xs hidden md:block">
       <div class="container mx-auto px-6 py-2 flex justify-between items-center">
-        <div>
-          <span class="mr-4">Tel: +886-4-23200709</span>
-          <span>Email: info@tib-lab.com</span>
+        <div class="flex items-center gap-4 opacity-90">
+          <span>Tel: +886-4-23200709</span>
+          <span>info@tib-lab.com</span>
         </div>
-        <span>台中市南屯區文心路一段378號24樓之5</span>
+        <span class="opacity-90">台中市南屯區文心路一段378號24樓之5</span>
       </div>
     </div>
 
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <RouterLink to="/" class="text-2xl font-bold text-blue-600 hover:text-blue-700">
-        <span class="">台灣新創生醫</span>
+      <RouterLink to="/" class="text-2xl font-extrabold tracking-tight text-gray-900">
+        <span>台灣新創生醫</span>
       </RouterLink>
 
-      <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="md:hidden z-20">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="md:hidden z-20 text-gray-700">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path v-if="!isMobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-8 6h8"></path>
           <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
 
-      <div class="hidden md:flex items-center space-x-6">
+      <div class="hidden md:flex items-center gap-8">
         <RouterLink v-for="link in navLinks" :key="link.name" :to="link.path"
-                    class="text-gray-700 hover:text-blue-600 transition"
-                    active-class="font-semibold text-blue-600 border-b-2 border-blue-600 pb-1">
+                    class="text-gray-700 hover:text-brand-700 transition relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-brand-600 hover:after:w-full after:transition-all"
+                    active-class="text-brand-700 font-semibold">
           {{ link.name }}
         </RouterLink>
       </div>
 
-      <div v-if="isMobileMenuOpen" class="md:hidden absolute top-0 left-0 w-full h-screen bg-white flex flex-col items-center justify-center space-y-8">
+      <div v-if="isMobileMenuOpen" class="md:hidden fixed inset-0 bg-white/95 backdrop-blur flex flex-col items-center justify-center space-y-8">
         <RouterLink v-for="link in navLinks" :key="link.name" :to="link.path"
                     @click="isMobileMenuOpen = false"
-                    class="text-2xl text-gray-800 hover:text-blue-600">
+                    class="text-2xl text-gray-900 hover:text-brand-700">
           {{ link.name }}
         </RouterLink>
       </div>

@@ -1,10 +1,12 @@
 <template>
-  <div class-="relative w-full h-[600px] md:h-[700px] bg-gray-900">
+  <div class="relative w-full h-[600px] md:h-[700px] bg-gray-900">
     <swiper
       :modules="[Navigation, Pagination, Autoplay, EffectFade]"
       :slides-per-view="1"
       :loop="true"
       :effect="'fade'"
+      :fade-effect="{ crossFade: true }"
+      :speed="700"
       :autoplay="{ delay: 5000, disableOnInteraction: false }"
       :pagination="{ clickable: true }"
       :navigation="true"
@@ -15,16 +17,16 @@
           class="w-full h-full bg-cover bg-center"
           :style="{ backgroundImage: `url(${slide.image})` }"
         >
-          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60"></div>
         </div>
         
         <div class="absolute inset-0 flex items-center justify-center text-center">
           <div class="container mx-auto px-6 text-white">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">{{ slide.title }}</h1>
-            <p class="text-lg md:text-2xl mb-8 max-w-2xl mx-auto">{{ slide.subtitle }}</p>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 drop-shadow">{{ slide.title }}</h1>
+            <p class="text-lg md:text-2xl mb-10 max-w-3xl mx-auto opacity-95">{{ slide.subtitle }}</p>
             <RouterLink 
               to="/products" 
-              class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300"
+              class="btn-primary text-lg"
             >
               瞭解更多
             </RouterLink>
