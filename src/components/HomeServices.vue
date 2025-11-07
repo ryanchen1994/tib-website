@@ -7,18 +7,18 @@
         <p class="text-lg text-gray-600 mt-2">以智慧科技革新醫療流程</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         
         <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300">
           <img 
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpsJGvjQRCBsCBG5X3oYqP3sBETLvpQWRG3w&s" 
-            alt="智慧調劑台"
+            src="/src/assets/images/products/第五代智慧調劑台.png" 
+            alt="第五代智慧調劑台"
             class="w-full h-48 object-cover"
           >
           <div class="p-6 flex-grow">
-            <h3 class="text-2xl font-extrabold text-gray-900 mb-2">智慧調劑台</h3>
+            <h3 class="text-2xl font-extrabold text-gray-900 mb-2">第五代智慧調劑台</h3>
             <p class="text-gray-600 mb-4 leading-relaxed">
-              本系統為世界首創，通過多國專利肯定，以藥品調劑台搭載智慧導引系統，點亮相對應藥品指示燈，減輕工作負荷，大幅提升調劑準確率。
+              世界首創專利技術，搭載藥品圖形辨識智能管理系統，點亮相對應藥品指示燈，大幅提升調劑準確率。
             </p>
           </div>
           <div class="p-6 pt-0">
@@ -33,14 +33,36 @@
 
         <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300">
           <img 
-            src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=400&fit=crop" 
-            alt="ADC自動藥櫃"
+            src="/src/assets/images/products/第二代精靈小藥櫃.png" 
+            alt="第二代精靈小藥櫃"
             class="w-full h-48 object-cover"
           >
           <div class="p-6 flex-grow">
-            <h3 class="text-2xl font-extrabold text-gray-900 mb-2">ADC</h3>
+            <h3 class="text-2xl font-extrabold text-gray-900 mb-2">第二代精靈小藥櫃</h3>
             <p class="text-gray-600 mb-4 leading-relaxed">
-              市售唯一電子面板均顯示數量。佈局醫院－電子藥櫃與動畫數量顯示，抽屜面板均具有電子標籤及數量提示，提供即時庫存管理與用藥追蹤。
+              智慧化藥品管理系統，搭載電子標籤與數量即時顯示，提供完整的庫存管理與用藥追蹤，確保藥品安全無虞。
+            </p>
+          </div>
+          <div class="p-6 pt-0">
+            <RouterLink 
+              to="/products" 
+              class="text-brand-600 hover:text-brand-700 font-semibold inline-flex items-center gap-1"
+            >
+              瞭解詳情 <span>&raquo;</span>
+            </RouterLink>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300">
+          <img 
+            src="/src/assets/images/products/智慧冰箱管理系統.png" 
+            alt="智慧冰箱管理系統"
+            class="w-full h-48 object-cover"
+          >
+          <div class="p-6 flex-grow">
+            <h3 class="text-2xl font-extrabold text-gray-900 mb-2">智慧冰箱管理系統</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              專業醫療冷藏保存系統，提供24小時溫度監控與異常警報，確保低溫藥品的安全存放與管理。
             </p>
           </div>
           <div class="p-6 pt-0">
