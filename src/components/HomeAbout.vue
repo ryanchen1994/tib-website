@@ -5,7 +5,7 @@
         
         <div class="w-full md:w-1/2 rounded-lg overflow-hidden shadow-lg">
           <img 
-            src="/tib-website/images/products/第五代智慧調劑台.png" 
+            :src="aboutImg" 
             alt="智能藥櫃系統" 
             class="w-full h-full object-cover"
           >
@@ -35,4 +35,6 @@
 
 <script setup>
 import { RouterLink } from 'vue-router'
+// 使用 script 計算 BASE_URL 路徑，避免在 template 裡直接使用 import.meta
+const aboutImg = `${import.meta.env.BASE_URL}images/products/第五代智慧調劑台.png`
 </script>
