@@ -84,7 +84,7 @@
 import { RouterLink } from 'vue-router'
 
 // 圖片路徑使用 public 目錄（使用 BASE_URL 以支援部署到子路徑）
-const imgDispense = `${import.meta.env.BASE_URL}images/products/第五代智慧調劑台.png`
+const imgDispense = `${import.meta.env.BASE_URL}images/products/第五代智慧調劑台2.png`
 const imgCabinet = `${import.meta.env.BASE_URL}images/products/第二代精靈小藥櫃.png`
 const imgFridge = `${import.meta.env.BASE_URL}images/products/智慧冰箱管理系統.png`
 </script>
