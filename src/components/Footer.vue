@@ -4,7 +4,9 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
         
         <div class="md:col-span-2">
-          <h3 class="text-xl font-extrabold text-white mb-3">台灣新創生醫</h3>
+          <div class="mb-3">
+            <img :src="footerLogo" alt="台新創LOGO" class="h-12 object-contain">
+          </div>
           <p class="text-sm mb-2">
             Tel: <a href="tel:+886423200709" class="text-brand-400 hover:text-brand-300 hover:underline transition">+886-4-23200709</a>
           </p>
@@ -57,4 +59,6 @@
 
 <script setup>
 import { RouterLink } from 'vue-router'
+// footer logo
+const footerLogo = new URL('../assets/images/Logos/LOGO-橫式加底.jpg', import.meta.url).href
 </script>

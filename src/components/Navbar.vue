@@ -12,8 +12,7 @@
 
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <RouterLink to="/" class="flex items-center gap-3 text-2xl font-extrabold tracking-tight text-gray-900">
-        <img :src="logoUrl" alt="台灣新創LOGO" class="h-10 w-10 object-contain" />
-        <span>台灣新創生醫</span>
+        <img :src="logoUrl" alt="台新創LOGO" class="h-10 object-contain" />
       </RouterLink>
 
       <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="md:hidden z-20 text-gray-900 bg-white/90 p-2 rounded-lg shadow-sm">
@@ -64,6 +63,6 @@ const navLinks = [
 
 // 【注意】 產品說明是下拉選單，我們之後再來處理，先讓它能點
 
-// logo 圖片使用 import.meta.url 在 script 中處理
-const logoUrl = new URL('../assets/images/Logos/純LOGO.png', import.meta.url).href
+// logo 圖片使用 import.meta.url 在 script 中處理，改為使用「台新創LOGO-橫式.png」
+const logoUrl = new URL('../assets/images/Logos/台新創LOGO-橫式.png', import.meta.url).href
 </script>
