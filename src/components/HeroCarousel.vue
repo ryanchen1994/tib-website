@@ -56,17 +56,17 @@ const slides = ref([
   {
     title: '第五代智慧調劑台',
     subtitle: '世界首創專利技術，搭載藥品圖形辨識智能管理系統，點亮相對應藥品指示燈，減輕工作負荷，大幅提升調劑準確率。',
-    image: '/src/assets/images/products/第五代智慧調劑台2.png'
+  image: new URL('../../public/images/products/第五代智慧調劑台抽屜2.png', import.meta.url).href
   },
   {
     title: '第二代精靈小藥櫃',
     subtitle: '智慧化藥品管理系統，搭載電子標籤與數量即時顯示，提供完整的庫存管理與用藥追蹤，確保藥品安全無虞。',
-    image: '/src/assets/images/products/第二代精靈小藥櫃 特.png'
+  image: new URL('../../public/images/products/第二代精靈小藥櫃 特.png', import.meta.url).href
   },
   {
     title: '智慧冰箱管理系統',
     subtitle: '專業醫療冷藏保存系統，24小時溫度監控，異常即時警報，確保低溫藥品安全無虞。',
-    image: '/src/assets/images/products/智慧冰箱管理系統.png'
+  image: new URL('../../public/images/products/智慧冰箱管理系統.png', import.meta.url).href
   }
 ])
 </script>

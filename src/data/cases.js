@@ -13,17 +13,17 @@ export const caseRegions = [
       {
         id: 'ntuh',
         name: '國立臺灣大學醫學院附設醫院',
-        imageUrl: '/src/assets/images/cases/國立臺灣大學醫學院附設醫院.jpg'
+        imageUrl: '/images/cases/國立臺灣大學醫學院附設醫院.jpg'
       },
       {
         id: 'vgh_taipei',
         name: '臺北榮民總醫院',
-        imageUrl: '/src/assets/images/cases/臺北榮民總醫院.jpg'
+        imageUrl: '/images/cases/臺北榮民總醫院.jpg'
       },
       {
         id: 'cgh',
         name: '國泰綜合醫院',
-        imageUrl: '/src/assets/images/cases/國泰綜合醫院.jpg'
+        imageUrl: '/images/cases/國泰綜合醫院.jpg'
       }
     ]
   },
@@ -36,27 +36,27 @@ export const caseRegions = [
       {
         id: 'vgh_taichung',
         name: '台中榮民總醫院',
-        imageUrl: '/src/assets/images/cases/臺中榮民總醫院.jpg'
+        imageUrl: '/images/cases/臺中榮民總醫院.jpg'
       },
       {
         id: 'cmuh',
         name: '中國醫藥大學附設醫院',
-        imageUrl: '/src/assets/images/cases/中國醫藥大學附設醫院.jfif'
+        imageUrl: '/images/cases/中國醫藥大學附設醫院.jfif'
       },
       {
         id: 'kwangtien_main',
         name: '光田綜合醫院',
-        imageUrl: '/src/assets/images/cases/光田醫院.jpg'
+        imageUrl: '/images/cases/光田醫院.jpg'
       },
       {
         id: 'kwangtien_dajia',
         name: '光田醫院大甲分院',
-        imageUrl: '/src/assets/images/cases/光田醫院大甲分院.webp'
+        imageUrl: '/images/cases/光田醫院大甲分院.webp'
       },
       {
         id: 'changan',
         name: '長安醫院',
-        imageUrl: '/src/assets/images/cases/長安醫院.png'
+        imageUrl: '/images/cases/長安醫院.png'
       }
     ]
   },
@@ -69,22 +69,22 @@ export const caseRegions = [
       {
         id: 'cch',
         name: '彰化基督教醫院',
-        imageUrl: '/src/assets/images/cases/彰化基督教醫院.jfif'
+        imageUrl: '/images/cases/彰化基督教醫院.jfif'
       },
       {
         id: 'ych',
         name: '員林基督教醫院',
-        imageUrl: '/src/assets/images/cases/員林基督教醫院.png'
+        imageUrl: '/images/cases/員林基督教醫院.png'
       },
       {
         id: 'lch',
         name: '鹿港基督教醫院',
-        imageUrl: '/src/assets/images/cases/鹿港基督教醫院.jpg'
+        imageUrl: '/images/cases/鹿港基督教醫院.jpg'
       },
       {
         id: 'hmch',
         name: '漢銘基督教醫院',
-        imageUrl: '/src/assets/images/cases/漢銘基督教醫院.jpg'
+        imageUrl: '/images/cases/漢銘基督教醫院.jpg'
       }
     ]
   },
@@ -97,7 +97,7 @@ export const caseRegions = [
       {
         id: 'tzuchi_dalin',
         name: '大林慈濟醫院',
-        imageUrl: '/src/assets/images/cases/大林慈濟醫院.jpg'
+        imageUrl: '/images/cases/大林慈濟醫院.jpg'
       }
     ]
   },
@@ -110,7 +110,7 @@ export const caseRegions = [
       {
         id: 'ncku_hospital',
         name: '成功大學附設醫院',
-        imageUrl: '/src/assets/images/cases/成功大學附設醫院.jpg'
+        imageUrl: '/images/cases/成功大學附設醫院.jpg'
       }
     ]
   }

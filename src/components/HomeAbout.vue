@@ -5,7 +5,7 @@
         
         <div class="w-full md:w-1/2 rounded-lg overflow-hidden shadow-lg">
           <img 
-            src="https://www.34485257.why3s.cc/2311/5-5.jpg" 
+            src="/tib-website/images/products/第五代智慧調劑台.png" 
             alt="智能藥櫃系統" 
             class="w-full h-full object-cover"
           >

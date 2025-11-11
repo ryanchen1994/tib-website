@@ -3,7 +3,7 @@
     <div class="absolute inset-0 bg-slate-900">
       <div class="absolute inset-0 bg-gradient-to-b from-cyan-900/60 via-slate-800/40 to-slate-900/70"></div>
       <img
-        src="/src/assets/Taiwan.png"
+        :src="taiwanImg"
         alt="台灣地圖"
         class="absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] object-contain drop-shadow-[0_25px_35px_rgba(14,116,144,0.25)]"
         loading="lazy"
@@ -80,6 +80,9 @@ const selectRegion = (regionId) => {
 }
 
 const isActive = (regionId) => regionId === props.modelValue
+
+// 圖片路徑：在 script setup 底下宣告 taiwanImg
+const taiwanImg = new URL('../assets/images/Taiwan.png', import.meta.url).href
 </script>
 
 <style scoped>

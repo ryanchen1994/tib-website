@@ -11,7 +11,7 @@
         
         <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300">
           <img 
-            src="/src/assets/images/products/第五代智慧調劑台.png" 
+            :src="imgDispense" 
             alt="第五代智慧調劑台"
             class="w-full h-48 object-cover"
           >
@@ -33,7 +33,7 @@
 
         <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300">
           <img 
-            src="/src/assets/images/products/第二代精靈小藥櫃.png" 
+            :src="imgCabinet" 
             alt="第二代精靈小藥櫃"
             class="w-full h-48 object-cover"
           >
@@ -55,7 +55,7 @@
 
         <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300">
           <img 
-            src="/src/assets/images/products/智慧冰箱管理系統.png" 
+            :src="imgFridge" 
             alt="智慧冰箱管理系統"
             class="w-full h-48 object-cover"
           >
@@ -82,4 +82,9 @@
 
 <script setup>
 import { RouterLink } from 'vue-router'
+
+// 圖片路徑使用 public 目錄
+const imgDispense = '/tib-website/images/products/第五代智慧調劑台2.png'
+const imgCabinet = '/tib-website/images/products/第二代精靈小藥櫃.png'
+const imgFridge = '/tib-website/images/products/智慧冰箱管理系統.png'
 </script>
