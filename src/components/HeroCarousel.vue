@@ -62,7 +62,7 @@ const slides = ref([
   {
     title: '第二代精靈小藥櫃',
     subtitle: '智慧化藥品管理系統，搭載電子標籤與數量即時顯示，提供完整的庫存管理與用藥追蹤，確保藥品安全無虞。',
-    image: `${BASE}images/products/第二代精靈小藥櫃 特.png`
+    image: `${BASE}images/products/第二代精靈小藥櫃-特.png`
   },
   {
     title: '智慧冰箱管理系統',
