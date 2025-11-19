@@ -12,12 +12,12 @@ export const products = [
     - 人性化操作介面設計\n
     - 高效能自動化調劑流程\n
     - 完整的用藥安全把關`,
-    imageUrl: '/images/products/第五代智慧調劑台2.png',
+    imageUrl: `${import.meta.env.BASE_URL}images/products/第五代智慧調劑台2.png`,
     gallery: [
-      '/images/products/第五代智慧調劑台.png',
-      '/images/products/第五代智慧調劑台2.png',
-      '/images/products/第五代智慧調劑台抽屜.png',
-      '/images/products/第五代智慧調劑台抽屜2.png'
+      `${import.meta.env.BASE_URL}images/products/第五代智慧調劑台.png`,
+      `${import.meta.env.BASE_URL}images/products/第五代智慧調劑台2.png`,
+      `${import.meta.env.BASE_URL}images/products/第五代智慧調劑台抽屜.png`,
+      `${import.meta.env.BASE_URL}images/products/第五代智慧調劑台抽屜2.png`
     ]
   },
   {
@@ -30,10 +30,10 @@ export const products = [
     - 自動記錄取藥歷程\n
     - 高風險藥品控管\n
     - 即時庫存管理`,
-    imageUrl: '/images/products/第二代精靈小藥櫃.png',
+    imageUrl: `${import.meta.env.BASE_URL}images/products/第二代精靈小藥櫃.png`,
     gallery: [
-      '/images/products/第二代精靈小藥櫃.png',
-      '/images/products/第二代精靈小藥櫃 特.png'
+      `${import.meta.env.BASE_URL}images/products/第二代精靈小藥櫃.png`,
+      `${import.meta.env.BASE_URL}images/products/第二代精靈小藥櫃 特.png`
     ]
   },
   {
@@ -47,9 +47,9 @@ export const products = [
     - 遠端監控功能\n
     - 自動記錄溫度日誌\n
     - 低溫藥品安全管理`,
-    imageUrl: '/images/products/智慧冰箱管理系統.png',
+    imageUrl: `${import.meta.env.BASE_URL}images/products/智慧冰箱管理系統.png`,
     gallery: [
-      '/images/products/智慧冰箱管理系統.png'
+      `${import.meta.env.BASE_URL}images/products/智慧冰箱管理系統.png`
     ]
   }
 ]
