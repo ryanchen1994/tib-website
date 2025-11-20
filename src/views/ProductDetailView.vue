@@ -18,38 +18,80 @@
         </div>
       </div>
 
-      <section class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-6 max-w-4xl">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">產品介紹</h2>
+      <section class="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
+        <div class="container mx-auto px-6 max-w-5xl">
           
           <!-- 支援字串或物件格式的 description -->
           <div v-if="typeof product.description === 'string'" class="prose prose-lg max-w-none text-gray-700 leading-relaxed whitespace-pre-line">
             <p>{{ product.description }}</p>
           </div>
           
-          <div v-else class="text-gray-700 leading-relaxed space-y-6">
-            <p class="text-lg">{{ product.description.intro }}</p>
+          <div v-else class="space-y-12">
+            <!-- 簡介區塊 -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border-l-4 border-blue-600">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-2xl font-bold text-gray-900 mb-4">產品概述</h2>
+                  <p class="text-lg text-gray-700 leading-relaxed">{{ product.description.intro }}</p>
+                </div>
+              </div>
+            </div>
             
-            <p v-for="(para, index) in product.description.paragraphs" :key="index" class="text-lg">
-              {{ para }}
-            </p>
+            <!-- 詳細說明段落 -->
+            <div class="space-y-6">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <span class="w-1 h-8 bg-blue-600 rounded-full"></span>
+                功能說明
+              </h3>
+              <div v-for="(para, index) in product.description.paragraphs" :key="index" 
+                   class="bg-white rounded-xl shadow-md p-6 md:p-8 hover:shadow-lg transition-shadow duration-300">
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-sm">
+                    {{ index + 1 }}
+                  </div>
+                  <p class="flex-1 text-lg text-gray-700 leading-relaxed">{{ para }}</p>
+                </div>
+              </div>
+            </div>
             
-            <div v-if="product.description.features" class="mt-8">
-              <h3 class="text-xl font-bold text-gray-900 mb-4">主要特點</h3>
-              <ul class="list-disc list-inside space-y-2 text-lg">
-                <li v-for="(feature, index) in product.description.features" :key="index">
-                  {{ feature }}
-                </li>
-              </ul>
+            <!-- 主要特點 -->
+            <div v-if="product.description.features" class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 md:p-10">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                主要特點
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div v-for="(feature, index) in product.description.features" :key="index"
+                     class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+                  <div class="flex items-center gap-3">
+                    <div class="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
+                      <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-800 font-medium">{{ feature }}</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="mt-16 text-center">
             <RouterLink 
               to="/products"
-              class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-3 px-8 rounded-lg transition duration-300"
+              class="inline-flex items-center gap-2 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
-              &laquo; 返回產品列表
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+              返回產品列表
             </RouterLink>
           </div>
         </div>
