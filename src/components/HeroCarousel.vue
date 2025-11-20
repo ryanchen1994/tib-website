@@ -22,14 +22,15 @@
         
         <div class="absolute inset-0 flex items-center justify-center text-center">
           <div class="container mx-auto px-6 text-white">
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 drop-shadow">{{ slide.title }}</h1>
-            <p class="text-lg md:text-2xl mb-10 max-w-3xl mx-auto opacity-95">{{ slide.subtitle }}</p>
-            <RouterLink 
-              to="/products" 
-              class="btn-primary text-lg"
-            >
-              瞭解更多
-            </RouterLink>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 drop-shadow">{{ slide.title }}</h1>
+            <ul class="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-left inline-block space-y-2">
+              <li v-for="(point, index) in slide.points" :key="index" class="flex items-start">
+                <span class="mr-2">•</span>
+                <span>{{ point }}</span>
+              </li>
+            </ul>
+            <div>
+            </div>
           </div>
         </div>
       </swiper-slide>
@@ -56,17 +57,29 @@ const BASE = import.meta.env.BASE_URL || '/'
 const slides = ref([
   {
     title: '第五代智慧調劑台',
-    subtitle: '世界首創專利技術，搭載藥品圖形辨識智能管理系統，點亮相對應藥品指示燈，減輕工作負荷，大幅提升調劑準確率。',
+    points: [
+      '智能指示燈導引系統',
+      '完整的調劑流程記錄與追蹤',
+      '支援客製化配置與彈性擴充'
+    ],
     image: `${BASE}images/products/第五代智慧調劑台抽屜2.png`
   },
   {
     title: '第二代精靈小藥櫃',
-    subtitle: '智慧化藥品管理系統，搭載電子標籤與數量即時顯示，提供完整的庫存管理與用藥追蹤，確保藥品安全無虞。',
+    points: [
+      '電子標籤即時顯示藥品資訊',
+      '自動記錄完整取用歷程',
+      '多層級權限管理與控管'
+    ],
     image: `${BASE}images/products/第二代精靈小藥櫃-特.png`
   },
   {
     title: '智慧冰箱管理系統',
-    subtitle: '專業醫療冷藏保存系統，24小時溫度監控，異常即時警報，確保低溫藥品安全無虞。',
+    points: [
+      '電子鎖控與權限管理',
+      '耐低溫電子標籤顯示',
+      '亮燈導引快速取藥'
+    ],
     image: `${BASE}images/products/智慧冰箱管理系統.png`
   }
 ])

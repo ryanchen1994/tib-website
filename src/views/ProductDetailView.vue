@@ -21,10 +21,28 @@
       <section class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-6 max-w-4xl">
           <h2 class="text-3xl font-bold text-gray-900 mb-6">產品介紹</h2>
-          <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+          
+          <!-- 支援字串或物件格式的 description -->
+          <div v-if="typeof product.description === 'string'" class="prose prose-lg max-w-none text-gray-700 leading-relaxed whitespace-pre-line">
             <p>{{ product.description }}</p>
-
+          </div>
+          
+          <div v-else class="text-gray-700 leading-relaxed space-y-6">
+            <p class="text-lg">{{ product.description.intro }}</p>
+            
+            <p v-for="(para, index) in product.description.paragraphs" :key="index" class="text-lg">
+              {{ para }}
+            </p>
+            
+            <div v-if="product.description.features" class="mt-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-4">主要特點</h3>
+              <ul class="list-disc list-inside space-y-2 text-lg">
+                <li v-for="(feature, index) in product.description.features" :key="index">
+                  {{ feature }}
+                </li>
+              </ul>
             </div>
+          </div>
 
           <div class="mt-16 text-center">
             <RouterLink 
