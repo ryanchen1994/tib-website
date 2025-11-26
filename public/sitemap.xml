@@ -2,22 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://twinnovationbio.com/</loc>
+    <lastmod>2025-11-26</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://twinnovationbio.com/about</loc>
+    <lastmod>2025-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://twinnovationbio.com/products</loc>
+    <lastmod>2025-11-26</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://twinnovationbio.com/cases</loc>
+    <lastmod>2025-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://twinnovationbio.com/contact</loc>
+    <lastmod>2025-11-26</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://twinnovationbio.com/products/smart-dispensing-station</loc>
+    <lastmod>2025-11-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://twinnovationbio.com/products/adc</loc>
+    <lastmod>2025-11-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://twinnovationbio.com/products/smart-fridge</loc>
+    <lastmod>2025-11-26</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
