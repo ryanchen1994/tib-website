@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# 主要使用自訂網域的 sitemap
+Sitemap: https://twinnovationbio.com/sitemap.xml
+
+# 備用（如需）：Cloudflare Pages 預設網域
+# Sitemap: https://tib-website.pages.dev/sitemap.xml
