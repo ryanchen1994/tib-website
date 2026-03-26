@@ -114,13 +114,26 @@ export const caseRegions = [
   {
     id: 'east',
     name: '花蓮地區',
-    description: '東部慈濟醫療體系',
+    description: '東部醫學中心',
     coordinates: { lat: 23.9911, lng: 121.6111, pct: { top: '39%', left: '68%' } },
     cases: [
       {
         id: 'tzuchi_hualien',
         name: '花蓮慈濟醫院',
         imageUrl: `${import.meta.env.BASE_URL}images/cases/花蓮慈濟醫院.png`
+      }
+    ]
+  },
+  {
+    id: 'tainan',
+    name: '台南地區',
+    description: '南部智慧醫療示範院所',
+    coordinates: { lat: 22.9999, lng: 120.2269, pct: { top: '65%', left: '25%' } },
+    cases: [
+      {
+        id: 'nckuh',
+        name: '成功大學附設醫院',
+        imageUrl: `${import.meta.env.BASE_URL}images/cases/成功大學附設醫院.jpg`
       }
     ]
   }
