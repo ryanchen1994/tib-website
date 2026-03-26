@@ -24,6 +24,11 @@ export const caseRegions = [
         id: 'cgh',
         name: '國泰綜合醫院',
         imageUrl: `${import.meta.env.BASE_URL}images/cases/國泰綜合醫院.jpg`
+      },
+      {
+        id: 'cheng_hsin',
+        name: '振興醫院',
+        imageUrl: `${import.meta.env.BASE_URL}images/cases/振興醫院.jpg`
       }
     ]
   },
@@ -57,6 +62,11 @@ export const caseRegions = [
         id: 'changan',
         name: '長安醫院',
         imageUrl: `${import.meta.env.BASE_URL}images/cases/長安醫院.png`
+      },
+      {
+        id: 'tsgh_taichung',
+        name: '國軍台中總醫院',
+        imageUrl: `${import.meta.env.BASE_URL}images/cases/國軍台中總醫院.jpg`
       }
     ]
   },
@@ -102,15 +112,15 @@ export const caseRegions = [
     ]
   },
   {
-    id: 'tainan',
-    name: '台南地區',
-    description: '南部智慧醫療示範院所',
-  coordinates: { lat: 22.9997, lng: 120.2270, pct: { top: '63.5%', left: '28%' } },
+    id: 'east',
+    name: '花蓮地區',
+    description: '東部慈濟醫療體系',
+    coordinates: { lat: 23.9911, lng: 121.6111, pct: { top: '39%', left: '68%' } },
     cases: [
       {
-        id: 'ncku_hospital',
-        name: '成功大學附設醫院',
-        imageUrl: `${import.meta.env.BASE_URL}images/cases/成功大學附設醫院.jpg`
+        id: 'tzuchi_hualien',
+        name: '花蓮慈濟醫院',
+        imageUrl: `${import.meta.env.BASE_URL}images/cases/花蓮慈濟醫院.png`
       }
     ]
   }
