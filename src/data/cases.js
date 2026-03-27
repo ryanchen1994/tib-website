@@ -5,7 +5,7 @@ export const caseRegions = [
   {
     id: 'north',
     name: '台北地區',
-    description: '台北都會區與北部醫療體系',
+    description: '台北醫學中心與北部醫療體系',
   // 使用緯經度來放置地點，讓地圖插件能準確定位
   // 使用緯經度 (保留) 以及圖片百分比位置供簡易底圖使用
   coordinates: { lat: 25.0330, lng: 121.5654, pct: { top: '10%', left: '67%' } },
