@@ -11,9 +11,9 @@ export const caseRegions = [
   coordinates: { lat: 25.0330, lng: 121.5654, pct: { top: '10%', left: '67%' } },
     cases: [
       {
-        id: 'ntuh',
-        name: '國立臺灣大學醫學院附設醫院',
-        imageUrl: `${import.meta.env.BASE_URL}images/cases/國立臺灣大學醫學院附設醫院.jpg`
+        id: 'tztp',
+        name: '台北慈濟醫院',
+        imageUrl: `${import.meta.env.BASE_URL}images/cases/台北慈濟醫院.jpg`
       },
       {
         id: 'vgh_taipei',
@@ -40,7 +40,7 @@ export const caseRegions = [
     cases: [
       {
         id: 'vgh_taichung',
-        name: '台中榮民總醫院',
+        name: '臺中榮民總醫院',
         imageUrl: `${import.meta.env.BASE_URL}images/cases/臺中榮民總醫院.jpg`
       },
       {
@@ -51,7 +51,7 @@ export const caseRegions = [
       {
         id: 'kwangtien_main',
         name: '光田綜合醫院',
-        imageUrl: `${import.meta.env.BASE_URL}images/cases/光田醫院.jpg`
+        imageUrl: `${import.meta.env.BASE_URL}images/cases/光田綜合醫院.jpg`
       },
       {
         id: 'kwangtien_dajia',
@@ -132,8 +132,8 @@ export const caseRegions = [
     cases: [
       {
         id: 'nckuh',
-        name: '成功大學附設醫院',
-        imageUrl: `${import.meta.env.BASE_URL}images/cases/成功大學附設醫院.jpg`
+        name: '國立成功大學醫學院附設醫院',
+        imageUrl: `${import.meta.env.BASE_URL}images/cases/國立成功大學醫學院附設醫院.jpg`
       }
     ]
   }
